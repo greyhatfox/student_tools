@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/CGPAPlanner/*"
+  to = "/CGPAPlanner/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/SchedulePlanner/*"
+  to = "/SchedulePlanner/index.html"
+  status = 200
