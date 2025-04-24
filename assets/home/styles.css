@@ -190,3 +190,34 @@ footer {
 .tool-card:nth-child(2) {
     animation-delay: 0.3s;
 }
+
+.social-icon {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #00ffff;
+    transition: color 0.3s ease;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.social-icon.linkedin:hover {
+    color: #0e76a8;
+    size: 1.5rem;
+    transform: scale(1.4);
+}
+
+.social-icon.email:hover {
+    color:#eb5834;
+    size: 1.5rem;
+    transform: scale(1.4);
+}
+
+.creds{
+    color: #b0b0b0;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
