@@ -3,57 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Smart GPA Planner</title>
+  <title>Smart GPA Calculator</title>
   <link rel="stylesheet" href="assets/cgpa/style.css" />
   <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <h1>🎓 Smart GPA Planner</h1>
+  <div class="main-content">
+    <div class="container">
+      <h1>🎓 Smart GPA Planner</h1>
 
-    <form id="gpaForm">
-      <label>Total credits required for degree:</label>
-      <input type="number" id="totalCredits" required />
+      <form id="gpaForm">
+        <label>Total credits required for degree:</label>
+        <input type="number" id="totalCredits" required />
 
-      <label>Credits you've completed so far:</label>
-      <input type="number" id="creditsDone" required />
+        <label>Credits you've completed so far:</label>
+        <input type="number" id="creditsDone" required />
 
-      <label>Your CGPA target:</label>
-      <input type="number" step="0.01" id="targetCGPA" required />
+        <label>Your CGPA target:</label>
+        <input type="number" step="0.01" id="targetCGPA" required />
 
-      <label>Most Frequent Grade:</label>
-      <select id="frequentGrade" required>
-        <option value="" disabled selected>Select grade</option>
-        <option value="s">S (10)</option>
-        <option value="a">A (9)</option>
-        <option value="b">B (8)</option>
-        <option value="c">C (7)</option>
-        <option value="d">D (6)</option>
-        <option value="e">E (5)</option>
-        <option value="f">F (0)</option>
-      </select>
+        <label>Most Frequent Grade:</label>
+        <select id="frequentGrade" required>
+          <option value="" disabled selected>Select grade</option>
+          <option value="s">S (10)</option>
+          <option value="a">A (9)</option>
+          <option value="b">B (8)</option>
+          <option value="c">C (7)</option>
+          <option value="d">D (6)</option>
+          <option value="e">E (5)</option>
+          <option value="f">F (0)</option>
+        </select>
 
-      <label>Grade you’ll put extra effort for:</label>
-      <select id="improvedGrade" required>
-        <option value="" disabled selected>Select grade</option>
-        <option value="s">S (10)</option>
-        <option value="a">A (9)</option>
-        <option value="b">B (8)</option>
-        <option value="c">C (7)</option>
-        <option value="d">D (6)</option>
-        <option value="e">E (5)</option>
-      </select>
+        <label>Grade you'll put extra effort for:</label>
+        <select id="improvedGrade" required>
+          <option value="" disabled selected>Select grade</option>
+          <option value="s">S (10)</option>
+          <option value="a">A (9)</option>
+          <option value="b">B (8)</option>
+          <option value="c">C (7)</option>
+          <option value="d">D (6)</option>
+          <option value="e">E (5)</option>
+        </select>
 
-      <fieldset id="otherGradesSection" class="collapsible">
-        <legend>Credits for Other Grades</legend>
-        <div id="otherGradesInputs"></div>
-      </fieldset>
+        <fieldset id="otherGradesSection" class="collapsible">
+          <legend>Credits for Other Grades</legend>
+          <div id="otherGradesInputs"></div>
+        </fieldset>
 
-      <button type="submit">Calculate</button>
-    </form>
+        <button type="submit">Calculate</button>
+      </form>
 
-    <div id="result"></div>
+      <div id="result"></div>
+    </div>
   </div>
+
+  <footer>
+    <p class="creds">Developed by Md Irfan Ahmed</p>
+    <div class="social-icons">
+      <a href="mailto:irfan.ahm.mohammad@gmail.com" class="social-icon email">
+        <i class="fas fa-envelope fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/irfan-mohammad-28295331b/" target="_blank" class="social-icon linkedin">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+    </div>
+  </footer>
 
   <script src="assets/cgpa/script.js"></script>
 </body>
