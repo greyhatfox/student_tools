@@ -3,9 +3,13 @@ body {
     color: #e0e0e0;
     font-family: 'Segoe UI', sans-serif;
     padding: 2rem;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center; /* This centers everything horizontally */
+    justify-content: flex-start; /* Aligns content to top */
     line-height: 1.6;
+    margin: 0;
 }
   
 .container {
@@ -203,4 +207,41 @@ tr:nth-child(even) {
         margin-left: 0;
         margin-top: 0.5rem;
     }
+}
+
+.page-footer {
+    /* Your existing footer styles */
+    padding: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    color: #00ffff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon.linkedin:hover {
+    color: #0e76a8;
+    size: 1.5rem;
+    transform: scale(1.4);
+}
+
+.social-icon.email:hover {
+    color:#eb5834;
+    size: 1.5rem;
+    transform: scale(1.4);
+}
+
+/* Ensures all icons render at same pixel size */
+.social-icon i {
+    line-height: 1;
+    vertical-align: middle;
 }
