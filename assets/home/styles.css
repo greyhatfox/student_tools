@@ -14,11 +14,16 @@ body {
 
 /* Header Styles */
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     text-align: center;
     margin-bottom: 3rem;
     width: 100%;
-    max-width: 800px;
+    max-width:none;
     padding: 0 1rem;
+    background-color: #0d0d0d;
+    box-shadow: #0d0d0d 0px 10px 10px;
 }
 
 h1 {

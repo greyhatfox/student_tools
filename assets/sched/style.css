@@ -11,7 +11,20 @@ body {
     line-height: 1.6;
     margin: 0;
 }
-  
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    margin-bottom: 3rem;
+    width: 100%;
+    max-width:none;
+    padding: 0 1rem;
+    background-color: #0d0d0d;
+    box-shadow: #0d0d0d 0px 10px 10px;
+}
+
 .container {
     max-width: 600px;
     width: 100%;
@@ -26,6 +39,23 @@ h1 {
     margin-bottom: 2rem;
     color: #00ffff;
     font-size: 2rem;
+}
+
+
+#title{
+    color: #00ffff;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.subtitle {
+    color: #b0b0b0;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
 }
 
 h2 {
@@ -244,4 +274,16 @@ tr:nth-child(even) {
 .social-icon i {
     line-height: 1;
     vertical-align: middle;
+}
+
+
+#subjectCount {
+  text-align: left;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 100%;
+  box-sizing: border-box;
 }
